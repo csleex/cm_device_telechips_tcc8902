@@ -395,7 +395,7 @@ on boot
 
     symlink /system/etc/softmac /data/softmac
 
-    exec /system/bin/write-calc_table.sh
+    chmod 0666 /sys/class/input/input1/calc_table
 
 # Include extra init file
     import /system/etc/init.local.rc
@@ -534,6 +534,9 @@ service keystore /system/bin/keystore /data/misc/keystore
 service dumpstate /system/bin/dumpstate -s
     socket dumpstate stream 0660 shell log
     disabled
+    oneshot
+
+service write-calc_table /system/bin/write-calc_table.sh
     oneshot
 
 service wpa_supplicant /system/bin/wpa_supplicant -Dawext -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
