@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     device/telechips/tcc8902/write-calc_table.sh:system/bin/write-calc_table.sh
 
 PRODUCT_COPY_FILES += \
+    device/telechips/tcc8902/etc/custom_backup_list.txt:system/etc/custom_backup_list.txt \
     device/telechips/tcc8902/etc/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     device/telechips/tcc8902/etc/vold.fstab:system/etc/vold.fstab \
     device/telechips/tcc8902/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf

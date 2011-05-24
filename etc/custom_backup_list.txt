@@ -1,0 +1,2 @@
+etc/calc_table
+etc/softmac
