@@ -33,10 +33,10 @@ adb pull /system/lib/hw/gralloc.tcc92xx.so ../../../vendor/$MANUFACTURER/$DEVICE
 adb pull /system/lib/hw/lights.tcc92xx.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/lights.tcc92xx.so
 adb pull /system/lib/hw/overlay.tcc92xx.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/overlay.tcc92xx.so
 adb pull /system/lib/hw/sensors.tcc92xx.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/sensors.tcc92xx.so
+adb pull /system/lib/libMali.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libMali.so
 adb pull /system/lib/libasound.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libasound.so
 adb pull /system/lib/libaudio.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libaudio.so
 adb pull /system/lib/libaudiopolicy.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libaudiopolicy.so
-adb pull /system/lib/libMali.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libMali.so
 adb pull /system/usr/keylayout/telechips_keypad.kl ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/telechips_keypad.kl
 adb pull /system/usr/keylayout/telechips_remote_controller.kl ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/telechips_remote_controller.kl
 adb pull /system/wifi/ar6000.ko ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/ar6000.ko
@@ -99,10 +99,10 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/lights.tcc92xx.so:system/lib/hw/lights.tcc92xx.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/overlay.tcc92xx.so:system/lib/hw/overlay.tcc92xx.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sensors.tcc92xx.so:system/lib/hw/sensors.tcc92xx.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libMali.so:system/lib/libMali.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libasound.so:system/lib/libasound.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libaudio.so:system/lib/libaudio.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libaudiopolicy.so:system/lib/libaudiopolicy.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libMali.so:system/lib/libMali.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/telechips_keypad.kl:system/usr/keylayout/telechips_keypad.kl \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/telechips_remote_controller.kl:system/usr/keylayout/telechips_remote_controller.kl \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/ar6000.ko:system/wifi/ar6000.ko \\
