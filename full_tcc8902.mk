@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/fonts/MTLmr3m.ttf:system/fonts/MTLmr3m.ttf
 
+PRODUCT_PACKAGES += \
+    makesoftmac.sh \
+    tccgetserial
+
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0

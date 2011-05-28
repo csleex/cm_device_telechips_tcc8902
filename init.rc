@@ -539,6 +539,9 @@ service dumpstate /system/bin/dumpstate -s
 service write-calc_table /system/bin/write-calc_table.sh
     oneshot
 
+service makesoftmac /system/bin/makesoftmac.sh
+    oneshot
+
 service wpa_supplicant /system/bin/wpa_supplicant -Dawext -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
     socket wpa_wlan0 dgram 0660 wifi wifi
     disabled
