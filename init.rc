@@ -393,8 +393,6 @@ on boot
     chown system system /dev/vpu
     chmod 0666 /dev/vpu
 
-    symlink /system/etc/softmac /data/softmac
-
     chmod 0666 /sys/class/input/input1/calc_table
 
 # Include extra init file
